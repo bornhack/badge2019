@@ -1,0 +1,3 @@
+[submodule "geckonator"]
+	path = geckonator
+	url = https://github.com/flummer/geckonator.git
