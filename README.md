@@ -54,6 +54,11 @@ apt-get install gcc-arm-none-eabi libnewlib-arm-none-eabi make
 dnf install arm-none-eabi-gcc arm-none-eabi-newlib make
 ```
 
+##### NixOS/Nix
+```sh
+nix-shell
+```
+
 ##### OSX
 
 Download an arm-none-eabi toolchain from ARM [here][arm-toolchain].
@@ -76,6 +81,8 @@ If you already have git installed
 ```
 git clone https://github.com/bornhack/badge2019.git
 cd badge2019
+git submodule init
+git submodule update
 ```
 
 Otherwise you can download a tarball or zip file from
