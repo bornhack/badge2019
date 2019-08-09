@@ -54,6 +54,11 @@ apt-get install gcc-arm-none-eabi libnewlib-arm-none-eabi make
 dnf install arm-none-eabi-gcc arm-none-eabi-newlib make
 ```
 
+##### NixOS/Nix
+```sh
+nix-shell
+```
+
 ##### OSX
 
 Download an arm-none-eabi toolchain from ARM [here][arm-toolchain].
