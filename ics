@@ -116,6 +116,6 @@ for ((i=0; i < N; i++)); do
 done
 echo '};'
 echo
-printf '/* %s: set ft=c: */' vim
+printf '/* %s: set ft=c: */\n' vim
 
 # vim: set ft=sh ts=2 sw=2 et:

@@ -56,17 +56,17 @@ static const char *event7[] = {
 };
 
 static const char *event8[] = {
-	"Fri  16:00-17:00",
-	"Speakers Tent",
-	"PaF || STFU",
-};
-
-static const char *event9[] = {
 	"Fri  16:00-18:00",
 	"Workshop Room 1",
 	"SIA Open? -",
 	"Workshop #1: Client",
 	"OS",
+};
+
+static const char *event9[] = {
+	"Fri  17:00-19:00",
+	"Workshop Room 2",
+	"Network scanning",
 };
 
 static const char *event10[] = {
@@ -77,12 +77,6 @@ static const char *event10[] = {
 };
 
 static const char *event11[] = {
-	"Fri  17:00-19:00",
-	"Workshop Room 2",
-	"Network scanning",
-};
-
-static const char *event12[] = {
 	"Fri  20:00-21:00",
 	"Speakers Tent",
 	"We're in it for the",
@@ -92,7 +86,7 @@ static const char *event12[] = {
 	"policies in 2019",
 };
 
-static const char *event13[] = {
+static const char *event12[] = {
 	"Fri  21:00-22:00",
 	"Bar Area",
 	"Qubes User Meetup,",
@@ -101,41 +95,25 @@ static const char *event13[] = {
 	"tricks",
 };
 
-static const char *event14[] = {
+static const char *event13[] = {
 	"Fri  22:00-23:00",
 	"Bar Area",
 	"Demoscene music mix",
 };
 
-static const char *event15[] = {
-	"Sat  11:00-12:00",
-	"Speakers Tent",
-	"A brief look at the",
-	"root cause of most",
-	"Spanish security",
-	"issues",
-};
-
-static const char *event16[] = {
+static const char *event14[] = {
 	"Sat  12:00-13:00",
 	"Speakers Tent",
 	"Lunch Break",
 };
 
-static const char *event17[] = {
+static const char *event15[] = {
 	"Sat  13:00-14:00",
 	"Speakers Tent",
 	"Anarchitecture",
 };
 
-static const char *event18[] = {
-	"Sat  14:00-15:00",
-	"Workshop Room 2",
-	"Digital aktivisme /",
-	"Digital activism",
-};
-
-static const char *event19[] = {
+static const char *event16[] = {
 	"Sat  14:00-15:00",
 	"Speakers Tent",
 	"post-its, post-its,",
@@ -144,13 +122,20 @@ static const char *event19[] = {
 	"to physical keys)",
 };
 
-static const char *event20[] = {
+static const char *event17[] = {
+	"Sat  14:00-15:00",
+	"Workshop Room 2",
+	"Digital aktivisme /",
+	"Digital activism",
+};
+
+static const char *event18[] = {
 	"Sat  15:00-16:00",
 	"Speakers Tent",
 	"Be Cynical",
 };
 
-static const char *event21[] = {
+static const char *event19[] = {
 	"Sat  15:00-17:00",
 	"Workshop Room 1",
 	"SIA Open? -",
@@ -158,14 +143,14 @@ static const char *event21[] = {
 	"and network",
 };
 
-static const char *event22[] = {
+static const char *event20[] = {
 	"Sat  16:00-17:00",
 	"Speakers Tent",
 	"NixOS, a functional",
 	"GNU/Linux distro",
 };
 
-static const char *event23[] = {
+static const char *event21[] = {
 	"Sat  17:00-18:00",
 	"Speakers Tent",
 	"Adventures in",
@@ -173,7 +158,7 @@ static const char *event23[] = {
 	"standardisation",
 };
 
-static const char *event24[] = {
+static const char *event22[] = {
 	"Sat  20:00-21:00",
 	"Speakers Tent",
 	"Hate to say we told",
@@ -183,20 +168,13 @@ static const char *event24[] = {
 	"ex-tinfoilhat",
 };
 
-static const char *event25[] = {
-	"Sat  21:00-22:00",
-	"Bar Area",
-	"Tor Relay Operators",
-	"Meetup",
-};
-
-static const char *event26[] = {
+static const char *event23[] = {
 	"Sat  22:00-23:00",
 	"Bar Area",
 	"Cristian Vogel",
 };
 
-static const char *event27[] = {
+static const char *event24[] = {
 	"Sun  11:00-12:00",
 	"Speakers Tent",
 	"Web Security Map -",
@@ -204,13 +182,13 @@ static const char *event27[] = {
 	"government!",
 };
 
-static const char *event28[] = {
+static const char *event25[] = {
 	"Sun  12:00-13:00",
 	"Speakers Tent",
 	"Lunch Break",
 };
 
-static const char *event29[] = {
+static const char *event26[] = {
 	"Sun  13:00-14:00",
 	"Speakers Tent",
 	"Bufferbloat and",
@@ -221,27 +199,27 @@ static const char *event29[] = {
 	"magnitude",
 };
 
-static const char *event30[] = {
+static const char *event27[] = {
 	"Sun  13:00-16:00",
 	"Outside",
 	"Fun with Bleach",
 };
 
-static const char *event31[] = {
-	"Sun  14:00-15:00",
-	"Speakers Tent",
-	"Hardware and",
-	"Protocols",
-};
-
-static const char *event32[] = {
+static const char *event28[] = {
 	"Sun  14:00-15:00",
 	"Bar Area",
 	"Cryptohagen - what",
 	"next?",
 };
 
-static const char *event33[] = {
+static const char *event29[] = {
+	"Sun  14:00-15:00",
+	"Speakers Tent",
+	"Hardware and",
+	"Protocols",
+};
+
+static const char *event30[] = {
 	"Sun  14:00-16:00",
 	"Workshop Room 1",
 	"SIA Open? -",
@@ -250,7 +228,7 @@ static const char *event33[] = {
 	"administration",
 };
 
-static const char *event34[] = {
+static const char *event31[] = {
 	"Sun  15:00-16:00",
 	"Speakers Tent",
 	"Can you trust your",
@@ -260,55 +238,73 @@ static const char *event34[] = {
 	"security",
 };
 
-static const char *event35[] = {
+static const char *event32[] = {
 	"Sun  16:00-17:00",
 	"Speakers Tent",
 	"Ekometic: The",
 	"Future Is Listening",
 };
 
-static const char *event36[] = {
+static const char *event33[] = {
 	"Sun  16:00-18:00",
 	"Workshop Room 1",
 	"Gentoo Install",
 	"Party",
 };
 
-static const char *event37[] = {
+static const char *event34[] = {
 	"Sun  16:00-18:00",
 	"Workshop Room 2",
 	"XDP hands-on",
 	"tutorial",
 };
 
-static const char *event38[] = {
+static const char *event35[] = {
 	"Sun  17:00-18:00",
 	"Speakers Tent",
 	"Introduction to the",
 	"Tor Ecosystem",
 };
 
-static const char *event39[] = {
-	"Sun  18:00-20:00",
+static const char *event36[] = {
+	"Sun  19:00-20:00",
 	"Speakers Tent",
-	"Lightning talks",
+	"PaF || STFU",
 };
 
-static const char *event40[] = {
+static const char *event37[] = {
+	"Sun  20:00-21:00",
+	"Speakers Tent",
+	"Confessions of a",
+	"nerd - featuring",
+	"drones, self",
+	"driving, Ai,",
+	"surveilence and the",
+	"doomsday machine",
+};
+
+static const char *event38[] = {
 	"Sun  21:00-22:00",
 	"Bar Area",
 	"UncensoredDNS 10",
 	"Years Anniversary",
 };
 
-static const char *event41[] = {
-	"Sun  23:00-00:00",
+static const char *event39[] = {
+	"Sun  22:00-23:30",
+	"Speakers Tent",
+	"Hacker Jeopardy",
+	"(Round #1)",
+};
+
+static const char *event40[] = {
+	"Sun  23:59-01:00",
 	"Speakers Tent",
 	"Tesla Coil Demo +",
 	"Information",
 };
 
-static const char *event42[] = {
+static const char *event41[] = {
 	"Mon  11:00-12:00",
 	"Speakers Tent",
 	"Sustainability",
@@ -316,42 +312,33 @@ static const char *event42[] = {
 	"role of hackers",
 };
 
-static const char *event43[] = {
+static const char *event42[] = {
 	"Mon  11:00-16:30",
 	"Outside",
 	"Massage",
 };
 
-static const char *event44[] = {
+static const char *event43[] = {
 	"Mon  12:00-13:00",
 	"Speakers Tent",
 	"Lunch Break",
 };
 
-static const char *event45[] = {
+static const char *event44[] = {
 	"Mon  12:00-15:00",
 	"Outside",
 	"UCL fablab",
 	"roadtrip!",
 };
 
-static const char *event46[] = {
-	"Mon  13:00-14:00",
-	"Speakers Tent",
-	"Why the fork should",
-	"I care about",
-	"probabilistic",
-	"programming?",
-};
-
-static const char *event47[] = {
+static const char *event45[] = {
 	"Mon  13:00-15:00",
 	"Workshop Room 1",
 	"Simulating DDoS",
 	"packets",
 };
 
-static const char *event48[] = {
+static const char *event46[] = {
 	"Mon  14:00-15:00",
 	"Speakers Tent",
 	"Limiting",
@@ -360,7 +347,7 @@ static const char *event48[] = {
 	"compile-time",
 };
 
-static const char *event49[] = {
+static const char *event47[] = {
 	"Mon  15:00-16:00",
 	"Speakers Tent",
 	"Alt om ulovlig",
@@ -369,7 +356,7 @@ static const char *event49[] = {
 	"Denmark",
 };
 
-static const char *event50[] = {
+static const char *event48[] = {
 	"Mon  15:00-17:00",
 	"Workshop Room 1",
 	"SIA Open? -",
@@ -378,7 +365,7 @@ static const char *event50[] = {
 	"portfolio",
 };
 
-static const char *event51[] = {
+static const char *event49[] = {
 	"Mon  16:00-17:00",
 	"Speakers Tent",
 	"Introduction to Mix",
@@ -387,7 +374,7 @@ static const char *event51[] = {
 	"anonymity movement",
 };
 
-static const char *event52[] = {
+static const char *event50[] = {
 	"Mon  17:00-18:00",
 	"Speakers Tent",
 	"Secure Scuttlebutt",
@@ -396,7 +383,7 @@ static const char *event52[] = {
 	"network",
 };
 
-static const char *event53[] = {
+static const char *event51[] = {
 	"Mon  18:00-19:00",
 	"Speakers Tent",
 	"Hacking a random",
@@ -409,14 +396,37 @@ static const char *event53[] = {
 	"years ago!",
 };
 
-static const char *event54[] = {
+static const char *event52[] = {
 	"Mon  19:00-20:00",
 	"Speakers Tent",
 	"LO! An LLVM",
 	"Obfuscator",
 };
 
+static const char *event53[] = {
+	"Mon  20:00-21:00",
+	"Speakers Tent",
+	"Next digital",
+	"frontier of European",
+	"Policy: Values and",
+	"Hope",
+};
+
+static const char *event54[] = {
+	"Mon  21:00-22:00",
+	"Bar Area",
+	"Tor Relay Operators",
+	"Meetup",
+};
+
 static const char *event55[] = {
+	"Mon  22:00-23:30",
+	"Speakers Tent",
+	"Hacker Jeopardy",
+	"(Round #2)",
+};
+
+static const char *event56[] = {
 	"Tue  01:00-02:30",
 	"Outside",
 	"The Perseids Meteor",
@@ -425,7 +435,7 @@ static const char *event55[] = {
 	"Night Sky",
 };
 
-static const char *event56[] = {
+static const char *event57[] = {
 	"Tue  11:00-12:00",
 	"Speakers Tent",
 	"concieggs: An",
@@ -434,13 +444,13 @@ static const char *event56[] = {
 	"attitude",
 };
 
-static const char *event57[] = {
+static const char *event58[] = {
 	"Tue  12:00-13:00",
 	"Speakers Tent",
 	"Lunch Break",
 };
 
-static const char *event58[] = {
+static const char *event59[] = {
 	"Tue  13:00-14:30",
 	"Speakers Tent",
 	"Dataetisk Raad -",
@@ -448,7 +458,7 @@ static const char *event58[] = {
 	"bruge det til noget?",
 };
 
-static const char *event59[] = {
+static const char *event60[] = {
 	"Tue  13:00-16:00",
 	"Workshop Room 1",
 	"Implementing the",
@@ -456,20 +466,20 @@ static const char *event59[] = {
 	"algorithm",
 };
 
-static const char *event60[] = {
+static const char *event61[] = {
 	"Tue  14:30-16:00",
 	"Speakers Tent",
 	"Det kontantloese",
 	"samfund",
 };
 
-static const char *event61[] = {
+static const char *event62[] = {
 	"Tue  15:00-17:00",
 	"Workshop Room 1",
 	"Geeky Jewelry",
 };
 
-static const char *event62[] = {
+static const char *event63[] = {
 	"Tue  16:00-17:00",
 	"Speakers Tent",
 	"Making use of",
@@ -478,7 +488,7 @@ static const char *event62[] = {
 	"programming language",
 };
 
-static const char *event63[] = {
+static const char *event64[] = {
 	"Tue  17:00-18:00",
 	"Speakers Tent",
 	"Public",
@@ -489,54 +499,61 @@ static const char *event63[] = {
 	"esskab",
 };
 
-static const char *event64[] = {
+static const char *event65[] = {
 	"Tue  18:00-19:00",
 	"Speakers Tent",
 	"Security challenges",
 	"faced by journalists",
 };
 
-static const char *event65[] = {
+static const char *event66[] = {
 	"Tue  19:00-20:00",
 	"Speakers Tent",
 	"Tales From the",
 	"Crypt",
 };
 
-static const char *event66[] = {
+static const char *event67[] = {
+	"Tue  22:00-23:30",
+	"Speakers Tent",
+	"Hacker Jeopardy",
+	"(Finals)",
+};
+
+static const char *event68[] = {
 	"Wed  10:00-12:00",
 	"Workshop Room 1",
 	"Libreboot flashing",
 	"+ GNU flags giveaway",
 };
 
-static const char *event67[] = {
+static const char *event69[] = {
 	"Wed  11:00-12:00",
 	"Speakers Tent",
 	"Wolf in Sheep's",
 	"Clothing - updated",
 };
 
-static const char *event68[] = {
+static const char *event70[] = {
 	"Wed  12:00-13:00",
 	"Speakers Tent",
 	"Lunch Break",
 };
 
-static const char *event69[] = {
+static const char *event71[] = {
 	"Wed  13:00-14:00",
 	"Speakers Tent",
 	"Lightning talks",
 };
 
-static const char *event70[] = {
+static const char *event72[] = {
 	"Wed  14:00-15:00",
 	"Speakers Tent",
 	"State of the",
 	"network",
 };
 
-static const char *event71[] = {
+static const char *event73[] = {
 	"Wed  15:00-16:00",
 	"Speakers Tent",
 	"A walk down memory",
@@ -545,14 +562,14 @@ static const char *event71[] = {
 	"70's and 80's",
 };
 
-static const char *event72[] = {
+static const char *event74[] = {
 	"Wed  16:00-17:00",
 	"Speakers Tent",
 	"Bornhack DECT",
 	"network 2019 edition",
 };
 
-static const char *event73[] = {
+static const char *event75[] = {
 	"Wed  17:00-18:00",
 	"Speakers Tent",
 	"Goodbye World",
@@ -576,10 +593,10 @@ static const struct event day1[] = {
 	{ event11, ARRAY_SIZE(event11), },
 	{ event12, ARRAY_SIZE(event12), },
 	{ event13, ARRAY_SIZE(event13), },
-	{ event14, ARRAY_SIZE(event14), },
 };
 
 static const struct event day2[] = {
+	{ event14, ARRAY_SIZE(event14), },
 	{ event15, ARRAY_SIZE(event15), },
 	{ event16, ARRAY_SIZE(event16), },
 	{ event17, ARRAY_SIZE(event17), },
@@ -589,12 +606,12 @@ static const struct event day2[] = {
 	{ event21, ARRAY_SIZE(event21), },
 	{ event22, ARRAY_SIZE(event22), },
 	{ event23, ARRAY_SIZE(event23), },
-	{ event24, ARRAY_SIZE(event24), },
-	{ event25, ARRAY_SIZE(event25), },
-	{ event26, ARRAY_SIZE(event26), },
 };
 
 static const struct event day3[] = {
+	{ event24, ARRAY_SIZE(event24), },
+	{ event25, ARRAY_SIZE(event25), },
+	{ event26, ARRAY_SIZE(event26), },
 	{ event27, ARRAY_SIZE(event27), },
 	{ event28, ARRAY_SIZE(event28), },
 	{ event29, ARRAY_SIZE(event29), },
@@ -609,10 +626,10 @@ static const struct event day3[] = {
 	{ event38, ARRAY_SIZE(event38), },
 	{ event39, ARRAY_SIZE(event39), },
 	{ event40, ARRAY_SIZE(event40), },
-	{ event41, ARRAY_SIZE(event41), },
 };
 
 static const struct event day4[] = {
+	{ event41, ARRAY_SIZE(event41), },
 	{ event42, ARRAY_SIZE(event42), },
 	{ event43, ARRAY_SIZE(event43), },
 	{ event44, ARRAY_SIZE(event44), },
@@ -626,10 +643,10 @@ static const struct event day4[] = {
 	{ event52, ARRAY_SIZE(event52), },
 	{ event53, ARRAY_SIZE(event53), },
 	{ event54, ARRAY_SIZE(event54), },
+	{ event55, ARRAY_SIZE(event55), },
 };
 
 static const struct event day5[] = {
-	{ event55, ARRAY_SIZE(event55), },
 	{ event56, ARRAY_SIZE(event56), },
 	{ event57, ARRAY_SIZE(event57), },
 	{ event58, ARRAY_SIZE(event58), },
@@ -640,17 +657,19 @@ static const struct event day5[] = {
 	{ event63, ARRAY_SIZE(event63), },
 	{ event64, ARRAY_SIZE(event64), },
 	{ event65, ARRAY_SIZE(event65), },
+	{ event66, ARRAY_SIZE(event66), },
+	{ event67, ARRAY_SIZE(event67), },
 };
 
 static const struct event day6[] = {
-	{ event66, ARRAY_SIZE(event66), },
-	{ event67, ARRAY_SIZE(event67), },
 	{ event68, ARRAY_SIZE(event68), },
 	{ event69, ARRAY_SIZE(event69), },
 	{ event70, ARRAY_SIZE(event70), },
 	{ event71, ARRAY_SIZE(event71), },
 	{ event72, ARRAY_SIZE(event72), },
 	{ event73, ARRAY_SIZE(event73), },
+	{ event74, ARRAY_SIZE(event74), },
+	{ event75, ARRAY_SIZE(event75), },
 };
 
 /* vim: set ft=c: */
