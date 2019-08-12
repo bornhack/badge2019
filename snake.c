@@ -25,6 +25,7 @@
 #include "events.h"
 #include "buttons.h"
 #include "display.h"
+#include "menu.h"
 
 enum events {
 	EV_UP = 1,
@@ -65,10 +66,10 @@ struct pos {
 };
 
 static void
-random_pos(struct pos *p)
+random_pos(struct pos *p, unsigned int res)
 {
-	p->x = (rand() % 44) * 5 + 10;
-	p->y = (rand() % 44) * 5 + 10;
+	p->x = (rand() % (240/res - 2)) * res + res;
+	p->y = (rand() % (240/res - 2)) * res + res;
 }
 
 static void
@@ -87,7 +88,7 @@ lost(unsigned int score)
 }
 
 void
-snake(void)
+snake(unsigned int res)
 {
 	struct pos path[256];
 	struct pos point;
@@ -96,8 +97,8 @@ snake(void)
 	enum direction ndir = DIR_DOWN;
 	unsigned int len = 5;
 	unsigned int i;
-	uint8_t currentX = 30;
-	uint8_t currentY = 30;
+	uint8_t currentX = 6*res;
+	uint8_t currentY = 6*res;
 
 	/* initialize path */
 	for (i = 0; i < len; i++) {
@@ -111,17 +112,17 @@ snake(void)
 	srand(4);
 
 	/* print border */
-	dp_fill(0,   0, 240,   5, 0xCB0);
-	dp_fill(0, 235, 240,   5, 0xCB0);
-	dp_fill(0,   5,   5, 230, 0xCB0);
-	dp_fill(235, 5,   5, 230, 0xCB0);
+	dp_fill(0,         0, 240,         res, 0xCB0);
+	dp_fill(0,   240-res, 240,         res, 0xCB0);
+	dp_fill(0,       res, res, 240 - 2*res, 0xCB0);
+	dp_fill(240-res, res, res, 240 - 2*res, 0xCB0);
 	/* clear middle part */
-	dp_fill(5, 5, 230, 230, 0x000);
+	dp_fill(res, res, 240 - 2*res, 240 - 2*res, 0x000);
 
 	/* first point */
-	point.x = 200;
-	point.y = 200;
-	dp_fill(point.x, point.y, 5, 5, 0xF00);
+	point.x = 240 - 8*res;
+	point.y = 240 - 8*res;
+	dp_fill(point.x, point.y, res, res, 0xF00);
 
 	buttons_config(snake_buttons);
 
@@ -153,10 +154,10 @@ snake(void)
 
 		cdir = ndir;
 		switch (cdir) {
-		case DIR_DOWN:  currentY += 5; break;
-		case DIR_UP:    currentY -= 5; break;
-		case DIR_LEFT:  currentX -= 5; break;
-		case DIR_RIGHT: currentX += 5; break;
+		case DIR_DOWN:  currentY += res; break;
+		case DIR_UP:    currentY -= res; break;
+		case DIR_LEFT:  currentX -= res; break;
+		case DIR_RIGHT: currentX += res; break;
 		}
 
 		/* did we eat a point? */
@@ -164,7 +165,7 @@ snake(void)
 			if (len < (ARRAY_SIZE(path) - 1))
 				len += 1;
 			/* generate new point */
-			random_pos(&point);
+			random_pos(&point, res);
 		}
 
 		/* calculate tail index */
@@ -174,10 +175,10 @@ snake(void)
 			k = i - len;
 
 		/* clear tail point */
-		dp_fill(path[k].x, path[k].y, 5, 5, 0x000);
+		dp_fill(path[k].x, path[k].y, res, res, 0x000);
 
 		/* paint new head */
-		dp_fill(currentX, currentY, 5, 5, 0xCB0);
+		dp_fill(currentX, currentY, res, res, 0xCB0);
 
 		/* did we hit ourself? */
 		while (1) {
@@ -192,7 +193,7 @@ snake(void)
 		}
 
 		/* did we hit the wall? */
-		if (currentX == 0 || currentX == 235 || currentY == 0 || currentY == 235) {
+		if (currentX == 0 || currentX == 240-res || currentY == 0 || currentY == 240-res) {
 			ticker_stop(&tick);
 			lost(len - 5);
 			return;
@@ -201,11 +202,31 @@ snake(void)
 		/* paint red dot last since it might
 		 * be inside the snake
 		 */
-		dp_fill(point.x, point.y, 5, 5, 0xF00);
+		dp_fill(point.x, point.y, res, res, 0xF00);
 
 		/* record this point */
 		path[i].x = currentX;
 		path[i].y = currentY;
 		i = (i + 1) % ARRAY_SIZE(path);
 	}
+}
+
+static void snake4(void)  { snake(4); }
+static void snake5(void)  { snake(5); }
+static void snake6(void)  { snake(6); }
+static void snake8(void)  { snake(8); }
+static void snake10(void) { snake(10); }
+
+void
+snakemenu(void)
+{
+	static const struct menuitem snakemenu[] = {
+		{ .label = "4", .cb = snake4,  },
+		{ .label = "5", .cb = snake5,  },
+		{ .label = "6", .cb = snake6,  },
+		{ .label = "8", .cb = snake8,  },
+		{ .label = "10",.cb = snake10, },
+	};
+
+	menu(snakemenu, ARRAY_SIZE(snakemenu), 0xCB0, 0x000);
 }

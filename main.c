@@ -77,14 +77,14 @@ void program(void);
 void buttontest(void);
 void showbmp(void);
 void dumpir(void);
-void snake(void);
+void snakemenu(void);
 
 static const struct menuitem main_menu[] = {
 	{ .label = "Browse program", .cb = program, },
 	{ .label = "Button test",    .cb = buttontest, },
 	{ .label = "Show BMP",       .cb = showbmp, },
 	{ .label = "Dump IR data",   .cb = dumpir, },
-	{ .label = "Snake",          .cb = snake, },
+	{ .label = "Snake",          .cb = snakemenu, },
 };
 
 void __noreturn
