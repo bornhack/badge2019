@@ -289,7 +289,7 @@ dp_uninit(void)
 	usart1_rxtx_disable();
 	usart1_pins(0);
 
-	gpio_mode(DP_BLK, GPIO_MODE_DISABLED);
+	dp_backlight_off();
 	gpio_mode(DP_RES, GPIO_MODE_DISABLED);
 	gpio_mode(DP_DC,  GPIO_MODE_DISABLED);
 	gpio_mode(DP_SCL, GPIO_MODE_DISABLED);
