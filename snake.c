@@ -1,6 +1,7 @@
 /*
  * This file is part of badge2019.
  * Copyright 2019 Niels Kristensen <niels@kristensen.io>
+ * Copyright 2019 Emil Renner Berthing <esmil@labitat.dk>
  *
  * badge2019 is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,173 +18,194 @@
  */
 
 #include <stdlib.h>
+#include <stdio.h>
 
 #include "leds.h"
 #include "timer.h"
 #include "events.h"
 #include "buttons.h"
 #include "display.h"
-#include "power.h"
 
 enum events {
-  EV_UP = 1,
-  EV_DOWN,
-  EV_LEFT,
-  EV_RIGHT,
+	EV_UP = 1,
+	EV_DOWN,
+	EV_LEFT,
+	EV_RIGHT,
+	EV_TICK,
+};
+
+enum direction {
+	DIR_UP,
+	DIR_DOWN,
+	DIR_LEFT,
+	DIR_RIGHT,
 };
 
 static const struct button_config snake_buttons[BTN_MAX] = {
-  [BTN_UP]     = { .press   = EV_UP, },
-  [BTN_DOWN]   = { .press   = EV_DOWN, },
-  [BTN_LEFT]   = { .press   = EV_LEFT, },
-  [BTN_RIGHT]  = { .press   = EV_RIGHT, },
+	[BTN_UP]    = { .press = EV_UP, },
+	[BTN_DOWN]  = { .press = EV_DOWN, },
+	[BTN_LEFT]  = { .press = EV_LEFT, },
+	[BTN_RIGHT] = { .press = EV_RIGHT, },
+};
+
+static const struct button_config anybutton[BTN_MAX] = {
+	[BTN_SUP]    = { .press = 1, },
+	[BTN_SMID]   = { .press = 1, },
+	[BTN_SDOWN]  = { .press = 1, },
+	[BTN_UP]     = { .press = 1, },
+	[BTN_DOWN]   = { .press = 1, },
+	[BTN_LEFT]   = { .press = 1, },
+	[BTN_RIGHT]  = { .press = 1, },
+	[BTN_CENTER] = { .press = 1, },
 };
 
 struct pos {
-  char x,
-       y;
+	uint8_t x;
+	uint8_t y;
 };
 
-static struct pos getRandomPos(){
-  short x, y;
-  struct pos point;
-
-  x = rand() % 44 * 5 + 10;
-  y = rand() % 44 * 5 + 10;
-
-  point.x = x;
-  point.y = y;
-  return point;
+static void
+random_pos(struct pos *p)
+{
+	p->x = (rand() % 44) * 5 + 10;
+	p->y = (rand() % 44) * 5 + 10;
 }
 
-static void lost(unsigned short len){
-  short xpos, printchar;
+static void
+lost(unsigned int score)
+{
+	char buf[4];
 
-  dp_fill(0, 0, 240, 240, 0x000);
-  dp_puts(30, 20, 0x00F, 0x00, "Your score:");
-  xpos = 220;
+	sprintf(buf, "%u", score);
 
-  if (xpos == 220 && len == 0) {
-    dp_putchar(xpos, 50, 0xCB0, 0x000, 48);
-  } else {	
-    while (len != 0) {
-      printchar = len % 10 + 48;
-      dp_putchar(xpos, 50, 0xCB0, 0x000, printchar);
-      len /= 10;
-      xpos -= 15;
-    }
-  }
-  timer_msleep(5000);
+	dp_fill(0, 0, 240, 240, 0x000);
+	dp_puts( 30, 20, 0x00F, 0x000, "Your score:");
+	dp_puts(150, 50, 0xCB0, 0x000, buf);
+
+	buttons_config(anybutton);
+	event_wait();
 }
 
 void
 snake(void)
 {
-  struct pos point;
-  struct pos path[256];
+	struct pos path[256];
+	struct pos point;
+	struct ticker tick;
+	enum direction cdir = DIR_DOWN;
+	enum direction ndir = DIR_DOWN;
+	unsigned int len = 5;
+	unsigned int i;
+	uint8_t currentX = 30;
+	uint8_t currentY = 30;
 
-  unsigned short i = 0, k = 0, last = 0, skip = 0, len = 5;
+	/* initialize path */
+	for (i = 0; i < len; i++) {
+		path[i].x = currentX;
+		path[i].y = currentY;
+	}
 
-  // clear and print border
-  dp_fill(0, 0, 240, 240, 0x000);
-  dp_fill(5, 5, 5, 235, 0xCB0);
-  dp_fill(235, 5, 5, 235, 0xCB0);
-  dp_fill(10, 5, 230, 5, 0xCB0);
-  dp_fill(10, 235, 230, 5, 0xCB0);
+	/* '4' guaranteed to be random
+	 * -- chosen by fair dice
+	 */
+	srand(4);
 
-  buttons_config(snake_buttons);
+	/* print border */
+	dp_fill(0,   0, 240,   5, 0xCB0);
+	dp_fill(0, 235, 240,   5, 0xCB0);
+	dp_fill(0,   5,   5, 230, 0xCB0);
+	dp_fill(235, 5,   5, 230, 0xCB0);
+	/* clear middle part */
+	dp_fill(5, 5, 230, 230, 0x000);
 
-  // start direction
-  char direction = 'd';
+	/* first point */
+	point.x = 200;
+	point.y = 200;
+	dp_fill(point.x, point.y, 5, 5, 0xF00);
 
-  // start position
-  unsigned short currentX = 30,
-           currentY = 30;
+	buttons_config(snake_buttons);
 
-  // first point
-  point.x = 200;
-  point.y = 200;
-  dp_fill(point.x, point.y, 5, 5, 0xF00);
+	ticker_start(&tick, 100, EV_TICK);
 
-  // '4' Guaranteed to be randomly -- chosen by fair dice
-  srand(4);
+	while (1) {
+		unsigned int k;
 
-  i = 0;
-  while (1) {
+		switch ((enum events)event_wait()) {
+		case EV_UP:
+			if (cdir != DIR_DOWN)
+				ndir = DIR_UP;
+			continue;
+		case EV_DOWN:
+			if (cdir != DIR_UP)
+				ndir = DIR_DOWN;
+			continue;
+		case EV_LEFT:
+			if (cdir != DIR_RIGHT)
+				ndir = DIR_LEFT;
+			continue;
+		case EV_RIGHT:
+			if (cdir != DIR_LEFT)
+				ndir = DIR_RIGHT;
+			continue;
+		case EV_TICK:
+			break;
+		}
 
-  switch ((enum events)event_get()) {
-    case EV_UP:
-      if (direction != 'd')
-        direction = 'u';
-      break;
-    case EV_DOWN:
-      if (direction != 'u')
-        direction = 'd';
-      break;
-    case EV_LEFT:
-      if (direction != 'r')
-        direction = 'l';
-      break;
-    case EV_RIGHT:
-      if (direction != 'l')
-        direction = 'r';
-      break;
-    }
+		cdir = ndir;
+		switch (cdir) {
+		case DIR_DOWN:  currentY += 5; break;
+		case DIR_UP:    currentY -= 5; break;
+		case DIR_LEFT:  currentX -= 5; break;
+		case DIR_RIGHT: currentX += 5; break;
+		}
 
-    if (direction == 'd'){
-      currentY += 5;
-    } else if (direction == 'u'){
-      currentY -= 5;
-    } else if (direction == 'l'){
-      currentX -= 5;
-    } else if (direction == 'r'){
-      currentX += 5;
-    }
+		/* did we eat a point? */
+		if (currentX == point.x && currentY == point.y) {
+			if (len < (ARRAY_SIZE(path) - 1))
+				len += 1;
+			/* generate new point */
+			random_pos(&point);
+		}
 
-    // Did we hit ourself?
-    unsigned int a, b, c;
-    if (i > 1) {
-      b = i - 2;
-      c = i - len - 1;
-      for(a = c; a <= b; a++)
-      {
-        if(currentX == path[a].x && currentY == path[a].y){
-          lost(len - 5);
-          return;
-        }
-      }
-    }
+		/* calculate tail index */
+		if (i < len)
+			k = ARRAY_SIZE(path) + i - len;
+		else
+			k = i - len;
 
-    dp_fill(currentX, currentY, 5, 5, 0xCB0);
+		/* clear tail point */
+		dp_fill(path[k].x, path[k].y, 5, 5, 0x000);
 
-    path[i].x = currentX;
-    path[i].y = currentY;
-    i = (i + 1) % ARRAY_SIZE(path);
+		/* paint new head */
+		dp_fill(currentX, currentY, 5, 5, 0xCB0);
 
-    if (k > 5 && !skip) {
-      dp_fill(path[last].x, path[last].y, 5, 5, 0x000);
-      last = (last + 1) % ARRAY_SIZE(path);
-    } else {
-      skip = 0;
-      k++;
-    }
+		/* did we hit ourself? */
+		while (1) {
+			k = (k + 1) % ARRAY_SIZE(path);
+			if (k == i)
+				break;
+			if (currentX == path[k].x && currentY == path[k].y) {
+				ticker_stop(&tick);
+				lost(len - 5);
+				return;
+			}
+		}
 
-    // Did we eat a point?
-    if (currentX == point.x && currentY == point.y){
-      skip = 1;
-      len++;
-      // generate new point
-      point = getRandomPos();
-    }
+		/* did we hit the wall? */
+		if (currentX == 0 || currentX == 235 || currentY == 0 || currentY == 235) {
+			ticker_stop(&tick);
+			lost(len - 5);
+			return;
+		}
 
-    dp_fill(point.x, point.y, 5, 5, 0xF00);
+		/* paint red dot last since it might
+		 * be inside the snake
+		 */
+		dp_fill(point.x, point.y, 5, 5, 0xF00);
 
-    // Did we hit the wall?
-    if (currentY == 235 || currentY == 5 || currentX == 5 || currentX == 235){
-      lost(len - 5);
-      return;
-    }
-
-    timer_msleep(100);
-  }
+		/* record this point */
+		path[i].x = currentX;
+		path[i].y = currentY;
+		i = (i + 1) % ARRAY_SIZE(path);
+	}
 }
