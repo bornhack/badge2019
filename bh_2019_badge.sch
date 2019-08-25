@@ -1,0 +1,1613 @@
+EESchema Schematic File Version 4
+LIBS:bh_2019_badge-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Bornhack 2019 Badge"
+Date ""
+Rev ""
+Comp "Bornhack"
+Comment1 "https://bornhack.dk/"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L bornhack_scale_it-rescue:EFM32HG322 U1
+U 1 1 5963C915
+P 3750 3250
+F 0 "U1" H 3700 3375 60  0000 L CNN
+F 1 "EFM32HG322" H 3450 3125 60  0000 L CNN
+F 2 "Housings_QFP:TQFP-48_7x7mm_Pitch0.5mm" H 3750 3250 60  0001 C CNN
+F 3 "" H 3750 3250 60  0000 C CNN
+	1    3750 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:+3.3V #PWR026
+U 1 1 5963D3CA
+P 800 4750
+F 0 "#PWR026" H 800 4600 50  0001 C CNN
+F 1 "+3.3V" H 815 4923 50  0000 C CNN
+F 2 "" H 800 4750 50  0000 C CNN
+F 3 "" H 800 4750 50  0000 C CNN
+	1    800  4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:GND #PWR030
+U 1 1 5963D61B
+P 800 5400
+F 0 "#PWR030" H 800 5150 50  0001 C CNN
+F 1 "GND" H 805 5227 50  0000 C CNN
+F 2 "" H 800 5400 50  0000 C CNN
+F 3 "" H 800 5400 50  0000 C CNN
+	1    800  5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:GND #PWR017
+U 1 1 5963D752
+P 5750 4050
+F 0 "#PWR017" H 5750 3800 50  0001 C CNN
+F 1 "GND" H 5755 3877 50  0000 C CNN
+F 2 "" H 5750 4050 50  0000 C CNN
+F 3 "" H 5750 4050 50  0000 C CNN
+	1    5750 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:GND #PWR011
+U 1 1 5963D979
+P 7950 3200
+F 0 "#PWR011" H 7950 2950 50  0001 C CNN
+F 1 "GND" H 7955 3027 50  0000 C CNN
+F 2 "" H 7950 3200 50  0000 C CNN
+F 3 "" H 7950 3200 50  0000 C CNN
+	1    7950 3200
+	1    0    0    -1  
+$EndComp
+Text GLabel 4950 3000 2    60   Input ~ 0
+USB_VCC
+Text GLabel 6700 2500 0    60   Input ~ 0
+USB_VCC
+$Comp
+L bornhack_scale_it-rescue:+3.3V #PWR010
+U 1 1 5963E061
+P 1950 2850
+F 0 "#PWR010" H 1950 2700 50  0001 C CNN
+F 1 "+3.3V" H 1965 3023 50  0000 C CNN
+F 2 "" H 1950 2850 50  0000 C CNN
+F 3 "" H 1950 2850 50  0000 C CNN
+	1    1950 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:GND #PWR012
+U 1 1 5963E081
+P 1700 3300
+F 0 "#PWR012" H 1700 3050 50  0001 C CNN
+F 1 "GND" H 1705 3127 50  0000 C CNN
+F 2 "" H 1700 3300 50  0000 C CNN
+F 3 "" H 1700 3300 50  0000 C CNN
+	1    1700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:+3.3V #PWR05
+U 1 1 5963E480
+P 3700 1725
+F 0 "#PWR05" H 3700 1575 50  0001 C CNN
+F 1 "+3.3V" H 3715 1898 50  0000 C CNN
+F 2 "" H 3700 1725 50  0000 C CNN
+F 3 "" H 3700 1725 50  0000 C CNN
+	1    3700 1725
+	1    0    0    -1  
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:GND #PWR06
+U 1 1 5963E517
+P 3600 1850
+F 0 "#PWR06" H 3600 1600 50  0001 C CNN
+F 1 "GND" H 3605 1677 50  0000 C CNN
+F 2 "" H 3600 1850 50  0000 C CNN
+F 3 "" H 3600 1850 50  0000 C CNN
+	1    3600 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:GND #PWR024
+U 1 1 5963EA13
+P 3700 4600
+F 0 "#PWR024" H 3700 4350 50  0001 C CNN
+F 1 "GND" H 3705 4427 50  0000 C CNN
+F 2 "" H 3700 4600 50  0000 C CNN
+F 3 "" H 3700 4600 50  0000 C CNN
+	1    3700 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:+3.3V #PWR021
+U 1 1 5963EC6E
+P 4950 4450
+F 0 "#PWR021" H 4950 4300 50  0001 C CNN
+F 1 "+3.3V" H 4965 4623 50  0000 C CNN
+F 2 "" H 4950 4450 50  0000 C CNN
+F 3 "" H 4950 4450 50  0000 C CNN
+	1    4950 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 3500 4550 3    60   Input ~ 0
+RESETn
+$Comp
+L bornhack_scale_it-rescue:+3.3V #PWR015
+U 1 1 5963F3E6
+P 5500 3650
+F 0 "#PWR015" H 5500 3500 50  0001 C CNN
+F 1 "+3.3V" H 5515 3823 50  0000 C CNN
+F 2 "" H 5500 3650 50  0000 C CNN
+F 3 "" H 5500 3650 50  0000 C CNN
+	1    5500 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:GND #PWR042
+U 1 1 59640066
+P 800 7400
+F 0 "#PWR042" H 800 7150 50  0001 C CNN
+F 1 "GND" H 805 7227 50  0000 C CNN
+F 2 "" H 800 7400 50  0000 C CNN
+F 3 "" H 800 7400 50  0000 C CNN
+	1    800  7400
+	1    0    0    -1  
+$EndComp
+Text GLabel 800  6700 1    60   Input ~ 0
+RESETn
+Text GLabel 2550 3600 0    60   Input ~ 0
+POWER
+Text GLabel 1250 6700 1    60   Input ~ 0
+POWER
+$Comp
+L bornhack_scale_it-rescue:GND #PWR043
+U 1 1 59640E3E
+P 1250 7400
+F 0 "#PWR043" H 1250 7150 50  0001 C CNN
+F 1 "GND" H 1255 7227 50  0000 C CNN
+F 2 "" H 1250 7400 50  0000 C CNN
+F 3 "" H 1250 7400 50  0000 C CNN
+	1    1250 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:GND #PWR08
+U 1 1 59658544
+P 8850 2050
+F 0 "#PWR08" H 8850 1800 50  0001 C CNN
+F 1 "GND" H 8855 1877 50  0000 C CNN
+F 2 "" H 8850 2050 50  0000 C CNN
+F 3 "" H 8850 2050 50  0000 C CNN
+	1    8850 2050
+	1    0    0    -1  
+$EndComp
+Text GLabel 9700 1275 2    60   Input ~ 0
+MCU_VDD
+Text GLabel 8400 1000 0    60   Input ~ 0
+USB_VCC
+Text GLabel 4950 2900 2    60   Input ~ 0
+VREGO
+Text GLabel 8400 700  0    60   Input ~ 0
+VREGO
+Text GLabel 7750 5600 0    60   Input ~ 0
+VBAT
+Text GLabel 850  4800 2    60   Input ~ 0
+MCU_VDD
+Text GLabel 4300 1950 1    60   Input ~ 0
+SWCLK
+Text GLabel 4200 1950 1    60   Input ~ 0
+SWDIO
+Text GLabel 3200 1950 1    60   Input ~ 0
+I2C0_SCL
+Text GLabel 3300 1950 1    60   Input ~ 0
+I2C0_SDA
+Text GLabel 5050 3800 2    60   Input ~ 0
+LEU0_RX
+Text GLabel 4300 4550 3    60   Input ~ 0
+LEU0_TX
+Wire Wire Line
+	800  4750 800  4800
+Wire Wire Line
+	800  5400 800  5250
+Wire Wire Line
+	4950 3400 5750 3400
+Wire Wire Line
+	5750 3400 5750 3600
+Wire Wire Line
+	5750 3900 5750 4050
+Wire Wire Line
+	7950 3100 7950 3200
+Wire Wire Line
+	7950 2800 7950 2350
+Wire Wire Line
+	7950 2350 6800 2350
+Wire Wire Line
+	6800 2350 6800 2500
+Wire Wire Line
+	6700 2500 6800 2500
+Connection ~ 6800 2500
+Wire Wire Line
+	2550 3000 1950 3000
+Wire Wire Line
+	1950 3000 1950 2850
+Wire Wire Line
+	3600 1850 3600 2050
+Wire Wire Line
+	3700 1725 3700 2050
+Wire Wire Line
+	3700 4450 3700 4600
+Wire Wire Line
+	3500 4450 3500 4550
+Wire Wire Line
+	4950 3500 5350 3500
+Wire Wire Line
+	6200 2200 6000 2200
+Wire Wire Line
+	5700 2200 5300 2200
+Wire Wire Line
+	5300 2200 5300 1300
+Wire Wire Line
+	5300 1300 2400 1300
+Wire Wire Line
+	2400 1300 2400 2700
+Wire Wire Line
+	2400 2700 2550 2700
+Wire Wire Line
+	9300 1200 9300 1275
+Wire Wire Line
+	9300 700  8400 700 
+Wire Wire Line
+	8850 1950 8850 2050
+Wire Wire Line
+	9300 1275 9700 1275
+Connection ~ 9300 1275
+Wire Wire Line
+	9300 1750 9300 2300
+Wire Wire Line
+	9300 2300 8400 2300
+Wire Wire Line
+	800  4800 850  4800
+Connection ~ 800  4800
+Wire Wire Line
+	9300 700  9300 800 
+Wire Wire Line
+	8850 1150 8850 1000
+Wire Wire Line
+	4200 1950 4200 2050
+Wire Wire Line
+	4300 1950 4300 2050
+Wire Wire Line
+	3300 1950 3300 2050
+Wire Wire Line
+	3200 1950 3200 2050
+Wire Wire Line
+	5350 3500 5350 3700
+Wire Wire Line
+	5350 3700 5500 3700
+Wire Wire Line
+	5500 3700 5500 3650
+Wire Wire Line
+	5050 3800 4950 3800
+Wire Wire Line
+	4300 4450 4300 4550
+Wire Wire Line
+	4950 4450 4950 5050
+Wire Wire Line
+	4950 5050 4200 5050
+Wire Wire Line
+	3800 5050 3800 4450
+Wire Wire Line
+	4100 4450 4100 5050
+Connection ~ 4100 5050
+Wire Wire Line
+	4200 4450 4200 5050
+Connection ~ 4200 5050
+Text GLabel 3200 4550 3    60   Input ~ 0
+LED_BOOT
+Wire Wire Line
+	3200 4550 3200 4450
+Wire Wire Line
+	3300 4550 3300 4450
+Wire Wire Line
+	3400 4550 3400 4450
+Wire Wire Line
+	4000 1950 4000 2050
+Wire Wire Line
+	4100 1950 4100 2050
+$Comp
+L bornhack_scale_it-rescue:CONN_01X04 J1
+U 1 1 596C6C8A
+P 850 1200
+F 0 "J1" H 769 825 50  0000 C CNN
+F 1 "DEBUG" H 769 916 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 850 1200 50  0001 C CNN
+F 3 "" H 850 1200 50  0001 C CNN
+	1    850  1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:GND #PWR04
+U 1 1 596C7142
+P 1150 1450
+F 0 "#PWR04" H 1150 1200 50  0001 C CNN
+F 1 "GND" H 1155 1277 50  0000 C CNN
+F 2 "" H 1150 1450 50  0000 C CNN
+F 3 "" H 1150 1450 50  0000 C CNN
+	1    1150 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:+3.3V #PWR01
+U 1 1 596C7191
+P 1150 950
+F 0 "#PWR01" H 1150 800 50  0001 C CNN
+F 1 "+3.3V" H 1165 1123 50  0000 C CNN
+F 2 "" H 1150 950 50  0000 C CNN
+F 3 "" H 1150 950 50  0000 C CNN
+	1    1150 950 
+	1    0    0    -1  
+$EndComp
+Text GLabel 1250 1250 2    60   Input ~ 0
+SWCLK
+Text GLabel 1250 1150 2    60   Input ~ 0
+SWDIO
+Wire Wire Line
+	1250 1150 1050 1150
+Wire Wire Line
+	1050 1250 1250 1250
+Wire Wire Line
+	1050 1350 1150 1350
+Wire Wire Line
+	1150 1350 1150 1450
+Wire Wire Line
+	1150 950  1150 1050
+Wire Wire Line
+	1150 1050 1050 1050
+$Comp
+L bornhack_scale_it-rescue:GND #PWR018
+U 1 1 596C8976
+P 800 4100
+F 0 "#PWR018" H 800 3850 50  0001 C CNN
+F 1 "GND" H 805 3927 50  0000 C CNN
+F 2 "" H 800 4100 50  0000 C CNN
+F 3 "" H 800 4100 50  0000 C CNN
+	1    800  4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  4000 800  4100
+Wire Wire Line
+	800  3600 800  3700
+Text GLabel 950  2950 2    60   Input ~ 0
+VBAT
+$Comp
+L bornhack_scale_it-rescue:GND #PWR013
+U 1 1 596CD5BD
+P 6850 3350
+F 0 "#PWR013" H 6850 3100 50  0001 C CNN
+F 1 "GND" H 6855 3177 50  0000 C CNN
+F 2 "" H 6850 3350 50  0000 C CNN
+F 3 "" H 6850 3350 50  0000 C CNN
+	1    6850 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 2550 3200 0    60   Input ~ 0
+SD_CD
+Text GLabel 4950 3700 2    60   Input ~ 0
+PD6
+Text GLabel 4950 3600 2    60   Input ~ 0
+PD7
+$Comp
+L bornhack_scale_it-rescue:CONN_01X04 J3
+U 1 1 596D2876
+P 850 2200
+F 0 "J3" H 769 1825 50  0000 C CNN
+F 1 "LE UART" H 769 1916 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 850 2200 50  0001 C CNN
+F 3 "" H 850 2200 50  0001 C CNN
+	1    850  2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:GND #PWR09
+U 1 1 596D287C
+P 1150 2450
+F 0 "#PWR09" H 1150 2200 50  0001 C CNN
+F 1 "GND" H 1155 2277 50  0000 C CNN
+F 2 "" H 1150 2450 50  0000 C CNN
+F 3 "" H 1150 2450 50  0000 C CNN
+	1    1150 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:+3.3V #PWR07
+U 1 1 596D2882
+P 1150 1950
+F 0 "#PWR07" H 1150 1800 50  0001 C CNN
+F 1 "+3.3V" H 1165 2123 50  0000 C CNN
+F 2 "" H 1150 1950 50  0000 C CNN
+F 3 "" H 1150 1950 50  0000 C CNN
+	1    1150 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 2150 1050 2150
+Wire Wire Line
+	1050 2250 1250 2250
+Wire Wire Line
+	1050 2350 1150 2350
+Wire Wire Line
+	1150 2350 1150 2450
+Wire Wire Line
+	1150 1950 1150 2050
+Wire Wire Line
+	1150 2050 1050 2050
+Text GLabel 1250 2150 2    60   Input ~ 0
+LEU0_RX
+Text GLabel 1250 2250 2    60   Input ~ 0
+LEU0_TX
+Wire Wire Line
+	950  2950 800  2950
+Wire Wire Line
+	800  2950 800  3300
+Wire Wire Line
+	5850 2700 4950 2700
+Wire Wire Line
+	3400 1950 3400 2050
+Wire Wire Line
+	3500 1950 3500 2050
+Wire Wire Line
+	9300 1275 9300 1350
+Wire Wire Line
+	800  4800 800  4950
+Wire Wire Line
+	8850 1000 8400 1000
+Wire Wire Line
+	4100 5050 3800 5050
+Wire Wire Line
+	4200 5050 4100 5050
+Wire Wire Line
+	6850 2900 6850 3200
+Connection ~ 6850 3200
+Wire Wire Line
+	6850 3200 6850 3350
+$Comp
+L bornhack_scale_it-rescue:CONN_01X04 J6
+U 1 1 5B3A1FE3
+P 1900 5700
+F 0 "J6" H 1819 5325 50  0000 C CNN
+F 1 "I2C" H 1819 5416 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 1900 5700 50  0001 C CNN
+F 3 "" H 1900 5700 50  0001 C CNN
+	1    1900 5700
+	-1   0    0    1   
+$EndComp
+Text GLabel 2100 5550 2    60   Input ~ 0
+I2C0_SDA
+Text GLabel 2100 5650 2    60   Input ~ 0
+I2C0_SCL
+$Comp
+L bornhack_scale_it-rescue:+3.3V #PWR032
+U 1 1 5B3A2339
+P 2800 5650
+F 0 "#PWR032" H 2800 5500 50  0001 C CNN
+F 1 "+3.3V" H 2815 5823 50  0000 C CNN
+F 2 "" H 2800 5650 50  0000 C CNN
+F 3 "" H 2800 5650 50  0000 C CNN
+	1    2800 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:GND #PWR033
+U 1 1 5B3A2376
+P 2800 5950
+F 0 "#PWR033" H 2800 5700 50  0001 C CNN
+F 1 "GND" H 2805 5777 50  0000 C CNN
+F 2 "" H 2800 5950 50  0000 C CNN
+F 3 "" H 2800 5950 50  0000 C CNN
+	1    2800 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 5750 2800 5750
+Wire Wire Line
+	2800 5750 2800 5650
+Wire Wire Line
+	2100 5850 2800 5850
+Wire Wire Line
+	2800 5850 2800 5950
+Wire Wire Line
+	1700 3100 1700 3300
+Wire Wire Line
+	1700 3100 2550 3100
+Text GLabel 3300 4550 3    50   Input ~ 0
+LED_A
+Text GLabel 3400 4550 3    50   Input ~ 0
+LED_B
+$Comp
+L bornhack_scale_it-rescue:+3.3V #PWR041
+U 1 1 5B3E5281
+P 3350 6950
+F 0 "#PWR041" H 3350 6800 50  0001 C CNN
+F 1 "+3.3V" H 3365 7123 50  0000 C CNN
+F 2 "" H 3350 6950 50  0000 C CNN
+F 3 "" H 3350 6950 50  0000 C CNN
+	1    3350 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 6950 3350 7050
+Wire Wire Line
+	3350 7050 3450 7050
+Wire Wire Line
+	3750 7050 3850 7050
+Wire Wire Line
+	4150 7050 4250 7050
+$Comp
+L bornhack_scale_it-rescue:+3.3V #PWR050
+U 1 1 5B3FB985
+P 3350 7450
+F 0 "#PWR050" H 3350 7300 50  0001 C CNN
+F 1 "+3.3V" H 3365 7623 50  0000 C CNN
+F 2 "" H 3350 7450 50  0000 C CNN
+F 3 "" H 3350 7450 50  0000 C CNN
+	1    3350 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 7450 3350 7550
+Wire Wire Line
+	3350 7550 3450 7550
+Wire Wire Line
+	3750 7550 3850 7550
+Wire Wire Line
+	4150 7550 4250 7550
+Text GLabel 4250 7550 2    60   Input ~ 0
+LED_BOOT
+$Comp
+L SeeedOPL-Transistor-2016:SMD-MOSFET-P-CH-8V-4.1A-CJ2305_SOT-23_ Q2
+U 1 1 5B4149F7
+P 9300 1550
+F 0 "Q2" H 9415 1508 45  0000 L CNN
+F 1 "SMD-MOSFET-P-CH-8V-4.1A-CJ2305_SOT-23_" H 9415 1592 45  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 9300 1550 50  0001 C CNN
+F 3 "" H 9300 1550 50  0001 C CNN
+F 4 "CJ2305" H 9330 1700 20  0001 C CNN "MPN"
+F 5 "305030014" H 9330 1700 20  0001 C CNN "SKU"
+	1    9300 1550
+	1    0    0    1   
+$EndComp
+$Comp
+L SeeedOPL-Transistor-2016:SMD-MOSFET-N-CH-20V-2.1A-CJ2302_SOT-23_ Q1
+U 1 1 5B414BD8
+P 9300 1000
+F 0 "Q1" H 9415 958 45  0000 L CNN
+F 1 "SMD-MOSFET-N-CH-20V-2.1A-CJ2302_SOT-23_" H 9415 1042 45  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 9300 1000 50  0001 C CNN
+F 3 "" H 9300 1000 50  0001 C CNN
+F 4 "CJ2302" H 9330 1150 20  0001 C CNN "MPN"
+F 5 "305030015" H 9330 1150 20  0001 C CNN "SKU"
+	1    9300 1000
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8850 1450 8850 1550
+Wire Wire Line
+	9100 1000 8850 1000
+Connection ~ 8850 1000
+Wire Wire Line
+	9100 1550 8850 1550
+Connection ~ 8850 1550
+Wire Wire Line
+	8850 1550 8850 1650
+Text GLabel 2450 4900 2    60   Input ~ 0
+I2C0_SDA
+Text GLabel 2450 5000 2    60   Input ~ 0
+I2C0_SCL
+$Comp
+L bornhack_scale_it-rescue:+3.3V #PWR028
+U 1 1 5B419B72
+P 1850 4750
+F 0 "#PWR028" H 1850 4600 50  0001 C CNN
+F 1 "+3.3V" H 1865 4923 50  0000 C CNN
+F 2 "" H 1850 4750 50  0000 C CNN
+F 3 "" H 1850 4750 50  0000 C CNN
+	1    1850 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 4900 2450 4900
+Wire Wire Line
+	2450 5000 2300 5000
+Wire Wire Line
+	2000 5000 1850 5000
+Wire Wire Line
+	1850 5000 1850 4900
+Wire Wire Line
+	2000 4900 1850 4900
+Connection ~ 1850 4900
+Wire Wire Line
+	1850 4900 1850 4750
+$Comp
+L device:C C2
+U 1 1 5CFB163D
+P 5750 3750
+F 0 "C2" H 5865 3796 50  0000 L CNN
+F 1 "1uF" H 5865 3705 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5788 3600 50  0001 C CNN
+F 3 "~" H 5750 3750 50  0001 C CNN
+	1    5750 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C4
+U 1 1 5CFB21A2
+P 800 5100
+F 0 "C4" H 915 5146 50  0000 L CNN
+F 1 "1uF" H 915 5055 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 838 4950 50  0001 C CNN
+F 3 "~" H 800 5100 50  0001 C CNN
+	1    800  5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:R R1
+U 1 1 5CFC497D
+P 8850 1300
+F 0 "R1" H 8920 1346 50  0000 L CNN
+F 1 "4k7" H 8920 1255 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 8780 1300 50  0001 C CNN
+F 3 "" H 8850 1300 50  0001 C CNN
+	1    8850 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:R R2
+U 1 1 5CFC53BC
+P 8850 1800
+F 0 "R2" H 8920 1846 50  0000 L CNN
+F 1 "6k8" H 8920 1755 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 8780 1800 50  0001 C CNN
+F 3 "" H 8850 1800 50  0001 C CNN
+	1    8850 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:LED D2
+U 1 1 5CFCA5B8
+P 3600 7050
+F 0 "D2" H 3593 6795 50  0000 C CNN
+F 1 "LED" H 3593 6886 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 3600 7050 50  0001 C CNN
+F 3 "~" H 3600 7050 50  0001 C CNN
+	1    3600 7050
+	-1   0    0    1   
+$EndComp
+$Comp
+L device:LED D5
+U 1 1 5CFCEE9F
+P 3600 7550
+F 0 "D5" H 3593 7295 50  0000 C CNN
+F 1 "LED" H 3593 7386 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 3600 7550 50  0001 C CNN
+F 3 "~" H 3600 7550 50  0001 C CNN
+	1    3600 7550
+	-1   0    0    1   
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:R R14
+U 1 1 5CFCF485
+P 4000 7050
+F 0 "R14" V 3793 7050 50  0000 C CNN
+F 1 "1k" V 3884 7050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3930 7050 50  0001 C CNN
+F 3 "" H 4000 7050 50  0001 C CNN
+	1    4000 7050
+	0    1    1    0   
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:R R15
+U 1 1 5CFD0292
+P 4000 7550
+F 0 "R15" V 3793 7550 50  0000 C CNN
+F 1 "1k" V 3884 7550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3930 7550 50  0001 C CNN
+F 3 "" H 4000 7550 50  0001 C CNN
+	1    4000 7550
+	0    1    1    0   
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:R R7
+U 1 1 5CFD06F1
+P 2150 4900
+F 0 "R7" V 1943 4900 50  0000 C CNN
+F 1 "4k7" V 2034 4900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 2080 4900 50  0001 C CNN
+F 3 "" H 2150 4900 50  0001 C CNN
+	1    2150 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:R R8
+U 1 1 5CFD14D2
+P 2150 5000
+F 0 "R8" V 2350 5000 50  0000 C CNN
+F 1 "4k7" V 2250 5000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 2080 5000 50  0001 C CNN
+F 3 "" H 2150 5000 50  0001 C CNN
+	1    2150 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:R R3
+U 1 1 5CFD1667
+P 5850 2200
+F 0 "R3" V 5643 2200 50  0000 C CNN
+F 1 "4k7" V 5734 2200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5780 2200 50  0001 C CNN
+F 3 "" H 5850 2200 50  0001 C CNN
+	1    5850 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:R R4
+U 1 1 5CFD2466
+P 6000 2800
+F 0 "R4" V 6200 2800 50  0000 C CNN
+F 1 "22" V 6100 2800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5930 2800 50  0001 C CNN
+F 3 "" H 6000 2800 50  0001 C CNN
+	1    6000 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:R R5
+U 1 1 5CFD2B0C
+P 6000 2700
+F 0 "R5" V 5800 2700 50  0000 C CNN
+F 1 "22" V 5900 2700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5930 2700 50  0001 C CNN
+F 3 "" H 6000 2700 50  0001 C CNN
+	1    6000 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW2
+U 1 1 5CFF0FAD
+P 800 7050
+F 0 "SW2" V 846 6962 50  0000 R CNN
+F 1 "SW_SPST" V 755 6962 50  0000 R CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 800 7050 50  0001 C CNN
+F 3 "~" H 800 7050 50  0001 C CNN
+	1    800  7050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW3
+U 1 1 5CFF179C
+P 1250 7050
+F 0 "SW3" V 1296 6962 50  0000 R CNN
+F 1 "SW_SPST" V 1205 6962 50  0000 R CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 1250 7050 50  0001 C CNN
+F 3 "~" H 1250 7050 50  0001 C CNN
+	1    1250 7050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	800  6700 800  6850
+Wire Wire Line
+	1250 6700 1250 6850
+Wire Wire Line
+	1250 7250 1250 7400
+Wire Wire Line
+	800  7250 800  7400
+$Comp
+L Connector:Conn_01x07_Male J5
+U 1 1 5D048A6D
+P 7000 4250
+F 0 "J5" H 6973 4182 50  0000 R CNN
+F 1 "DISP" H 6973 4273 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x07_Pitch2.54mm" H 7000 4250 50  0001 C CNN
+F 3 "~" H 7000 4250 50  0001 C CNN
+	1    7000 4250
+	1    0    0    1   
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:GND #PWR025
+U 1 1 5D04CBFA
+P 7300 4650
+F 0 "#PWR025" H 7300 4400 50  0001 C CNN
+F 1 "GND" H 7305 4477 50  0000 C CNN
+F 2 "" H 7300 4650 50  0000 C CNN
+F 3 "" H 7300 4650 50  0000 C CNN
+	1    7300 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 4550 7300 4550
+Wire Wire Line
+	7300 4550 7300 4650
+$Comp
+L bornhack_scale_it-rescue:+3.3V #PWR022
+U 1 1 5D05236C
+P 7200 4450
+F 0 "#PWR022" H 7200 4300 50  0001 C CNN
+F 1 "+3.3V" H 7215 4623 50  0000 C CNN
+F 2 "" H 7200 4450 50  0000 C CNN
+F 3 "" H 7200 4450 50  0000 C CNN
+	1    7200 4450
+	0    1    1    0   
+$EndComp
+Text GLabel 7200 4350 2    50   Input ~ 0
+DISP_SCL
+Text GLabel 7200 4250 2    50   Input ~ 0
+DISP_SDA
+Text GLabel 7200 4150 2    50   Input ~ 0
+DISP_RES
+Text GLabel 7200 4050 2    50   Input ~ 0
+DISP_DC
+Text GLabel 7200 3950 2    50   Input ~ 0
+DISP_BLK
+$Comp
+L device:C C1
+U 1 1 5D063429
+P 7950 2950
+F 0 "C1" H 8065 2996 50  0000 L CNN
+F 1 "4.7uF" H 8065 2905 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7988 2800 50  0001 C CNN
+F 3 "~" H 7950 2950 50  0001 C CNN
+	1    7950 2950
+	1    0    0    -1  
+$EndComp
+Text GLabel 2550 2800 0    50   Input ~ 0
+DISP_BLK
+Text GLabel 2550 2900 0    50   Input ~ 0
+DISP_DC
+Text GLabel 2550 3400 0    50   Input ~ 0
+DISP_RES
+Text GLabel 2550 3300 0    50   Input ~ 0
+DISP_SDA
+Text GLabel 2550 3500 0    50   Input ~ 0
+DISP_SCL
+Text GLabel 4250 7050 2    50   Input ~ 0
+LED_B
+$Comp
+L device:LED D3
+U 1 1 5D06955A
+P 5050 7100
+F 0 "D3" V 5089 6983 50  0000 R CNN
+F 1 "IR LED" V 4998 6983 50  0000 R CNN
+F 2 "Opto:IR_LED_1104_Side" H 5050 7100 50  0001 C CNN
+F 3 "~" H 5050 7100 50  0001 C CNN
+	1    5050 7100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:GND #PWR029
+U 1 1 5D06AA75
+P 10950 4850
+F 0 "#PWR029" H 10950 4600 50  0001 C CNN
+F 1 "GND" H 10955 4677 50  0000 C CNN
+F 2 "" H 10950 4850 50  0000 C CNN
+F 3 "" H 10950 4850 50  0000 C CNN
+	1    10950 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 4750 10950 4750
+Wire Wire Line
+	10950 4750 10950 4850
+$Comp
+L bornhack_scale_it-rescue:GND #PWR020
+U 1 1 5D06FB51
+P 9150 4350
+F 0 "#PWR020" H 9150 4100 50  0001 C CNN
+F 1 "GND" H 9155 4177 50  0000 C CNN
+F 2 "" H 9150 4350 50  0000 C CNN
+F 3 "" H 9150 4350 50  0000 C CNN
+	1    9150 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:+3.3V #PWR019
+U 1 1 5D070154
+P 9150 4150
+F 0 "#PWR019" H 9150 4000 50  0001 C CNN
+F 1 "+3.3V" H 9165 4323 50  0000 C CNN
+F 2 "" H 9150 4150 50  0000 C CNN
+F 3 "" H 9150 4150 50  0000 C CNN
+	1    9150 4150
+	0    -1   -1   0   
+$EndComp
+Text GLabel 9150 4250 0    50   Input ~ 0
+SD_CLK
+Text GLabel 9150 4050 0    50   Input ~ 0
+SD_MOSI
+Text GLabel 9150 4450 0    50   Input ~ 0
+SD_MISO
+NoConn ~ 9150 4550
+NoConn ~ 9150 3850
+$Comp
+L bornhack_scale_it-rescue:GND #PWR047
+U 1 1 5D07CB39
+P 5050 7400
+F 0 "#PWR047" H 5050 7150 50  0001 C CNN
+F 1 "GND" H 5055 7227 50  0000 C CNN
+F 2 "" H 5050 7400 50  0000 C CNN
+F 3 "" H 5050 7400 50  0000 C CNN
+	1    5050 7400
+	1    0    0    -1  
+$EndComp
+Text GLabel 4950 6400 0    50   Input ~ 0
+IR_TX
+Wire Wire Line
+	4950 6400 5050 6400
+Wire Wire Line
+	5050 6400 5050 6600
+Wire Wire Line
+	5050 7250 5050 7400
+$Comp
+L device:D_Photo D4
+U 1 1 5D0882D7
+P 5550 7100
+F 0 "D4" V 5546 7022 50  0000 R CNN
+F 1 "D_Photo" V 5455 7022 50  0000 R CNN
+F 2 "Opto:IR_LED_1104_Side" H 5500 7100 50  0001 C CNN
+F 3 "~" H 5500 7100 50  0001 C CNN
+	1    5550 7100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:Q_NPN_BCE Q3
+U 1 1 5D08A831
+P 6250 6950
+F 0 "Q3" H 6441 6996 50  0000 L CNN
+F 1 "BC817" H 6441 6905 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 6450 7050 50  0001 C CNN
+F 3 "~" H 6250 6950 50  0001 C CNN
+	1    6250 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:R R13
+U 1 1 5D08B51E
+P 5800 6950
+F 0 "R13" V 5593 6950 50  0000 C CNN
+F 1 "1k" V 5684 6950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5730 6950 50  0001 C CNN
+F 3 "" H 5800 6950 50  0001 C CNN
+	1    5800 6950
+	0    1    1    0   
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:GND #PWR048
+U 1 1 5D08BF1F
+P 5550 7400
+F 0 "#PWR048" H 5550 7150 50  0001 C CNN
+F 1 "GND" H 5555 7227 50  0000 C CNN
+F 2 "" H 5550 7400 50  0000 C CNN
+F 3 "" H 5550 7400 50  0000 C CNN
+	1    5550 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:GND #PWR049
+U 1 1 5D08C7BA
+P 6350 7400
+F 0 "#PWR049" H 6350 7150 50  0001 C CNN
+F 1 "GND" H 6355 7227 50  0000 C CNN
+F 2 "" H 6350 7400 50  0000 C CNN
+F 3 "" H 6350 7400 50  0000 C CNN
+	1    6350 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:R R9
+U 1 1 5D08CC66
+P 5550 6500
+F 0 "R9" H 5620 6546 50  0000 L CNN
+F 1 "10k" H 5620 6455 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 5480 6500 50  0001 C CNN
+F 3 "" H 5550 6500 50  0001 C CNN
+	1    5550 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:R R10
+U 1 1 5D08DAB5
+P 6350 6500
+F 0 "R10" H 6420 6546 50  0000 L CNN
+F 1 "10k" H 6420 6455 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 6280 6500 50  0001 C CNN
+F 3 "" H 6350 6500 50  0001 C CNN
+	1    6350 6500
+	1    0    0    -1  
+$EndComp
+Text GLabel 6550 6700 2    50   Input ~ 0
+IR_RX
+$Comp
+L bornhack_scale_it-rescue:+3.3V #PWR038
+U 1 1 5D08E771
+P 5550 6250
+F 0 "#PWR038" H 5550 6100 50  0001 C CNN
+F 1 "+3.3V" H 5565 6423 50  0000 C CNN
+F 2 "" H 5550 6250 50  0000 C CNN
+F 3 "" H 5550 6250 50  0000 C CNN
+	1    5550 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:+3.3V #PWR039
+U 1 1 5D08F308
+P 6350 6250
+F 0 "#PWR039" H 6350 6100 50  0001 C CNN
+F 1 "+3.3V" H 6365 6423 50  0000 C CNN
+F 2 "" H 6350 6250 50  0000 C CNN
+F 3 "" H 6350 6250 50  0000 C CNN
+	1    6350 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 6250 6350 6350
+Wire Wire Line
+	6350 6650 6350 6700
+Wire Wire Line
+	6550 6700 6350 6700
+Connection ~ 6350 6700
+Wire Wire Line
+	6350 6700 6350 6750
+Wire Wire Line
+	6050 6950 5950 6950
+Wire Wire Line
+	5650 6950 5550 6950
+Wire Wire Line
+	5550 6950 5550 7000
+Connection ~ 5550 6950
+Wire Wire Line
+	5550 7300 5550 7400
+Wire Wire Line
+	6350 7150 6350 7400
+$Comp
+L badgelife_shitty_addon_v169bis:Badgelife_sao_connector_v169bis J2
+U 1 1 5D0E1964
+P 6600 1200
+F 0 "J2" V 6500 1150 50  0000 L CNN
+F 1 "Badgelife_sao_connector_v169bis" V 6200 600 50  0000 L CNN
+F 2 "badgelife_sao_v169bis:Badgelife-SAOv169-BADGE-2x3" H 6600 1400 50  0001 C CNN
+F 3 "" H 6600 1400 50  0001 C CNN
+	1    6600 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:+3.3V #PWR03
+U 1 1 5D0E8AEC
+P 7150 1000
+F 0 "#PWR03" H 7150 850 50  0001 C CNN
+F 1 "+3.3V" H 7165 1173 50  0000 C CNN
+F 2 "" H 7150 1000 50  0000 C CNN
+F 3 "" H 7150 1000 50  0000 C CNN
+	1    7150 1000
+	0    1    1    0   
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:GND #PWR02
+U 1 1 5D0E9158
+P 6050 1000
+F 0 "#PWR02" H 6050 750 50  0001 C CNN
+F 1 "GND" H 6055 827 50  0000 C CNN
+F 2 "" H 6050 1000 50  0000 C CNN
+F 3 "" H 6050 1000 50  0000 C CNN
+	1    6050 1000
+	0    1    1    0   
+$EndComp
+Text GLabel 7150 1200 2    60   Input ~ 0
+I2C0_SDA
+Text GLabel 6050 1200 0    60   Input ~ 0
+I2C0_SCL
+$Comp
+L Semiconductors:TPS61322 U2
+U 1 1 5D0FDCC1
+P 8800 5750
+F 0 "U2" H 8800 6125 50  0000 C CNN
+F 1 "TPS61322" H 8800 6034 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 8800 5750 50  0001 C CNN
+F 3 "" H 8800 5750 50  0001 C CNN
+	1    8800 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:L L1
+U 1 1 5D0FF2C2
+P 8150 5600
+F 0 "L1" V 8340 5600 50  0000 C CNN
+F 1 "2.2uH" V 8249 5600 50  0000 C CNN
+F 2 "Inductors_SMD:L_0805" H 8150 5600 50  0001 C CNN
+F 3 "~" H 8150 5600 50  0001 C CNN
+	1    8150 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:C C6
+U 1 1 5D0FFE4F
+P 7900 5800
+F 0 "C6" H 8015 5846 50  0000 L CNN
+F 1 "4.7uF" H 8015 5755 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7938 5650 50  0001 C CNN
+F 3 "~" H 7900 5800 50  0001 C CNN
+	1    7900 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C7
+U 1 1 5D100DE0
+P 9400 5800
+F 0 "C7" H 9515 5846 50  0000 L CNN
+F 1 "47uF" H 9515 5755 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210" H 9438 5650 50  0001 C CNN
+F 3 "~" H 9400 5800 50  0001 C CNN
+	1    9400 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 5600 7900 5600
+Wire Wire Line
+	7900 5650 7900 5600
+Connection ~ 7900 5600
+Wire Wire Line
+	7900 5600 8000 5600
+Wire Wire Line
+	8300 5600 8450 5600
+Wire Wire Line
+	9150 5600 9400 5600
+Wire Wire Line
+	9400 5650 9400 5600
+Text GLabel 9600 5600 2    50   Input ~ 0
+BATREG
+Text GLabel 8400 2300 0    50   Input ~ 0
+BATREG
+$Comp
+L bornhack_scale_it-rescue:GND #PWR034
+U 1 1 5D126E2A
+P 7900 6050
+F 0 "#PWR034" H 7900 5800 50  0001 C CNN
+F 1 "GND" H 7905 5877 50  0000 C CNN
+F 2 "" H 7900 6050 50  0000 C CNN
+F 3 "" H 7900 6050 50  0000 C CNN
+	1    7900 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:GND #PWR035
+U 1 1 5D12754B
+P 9200 6050
+F 0 "#PWR035" H 9200 5800 50  0001 C CNN
+F 1 "GND" H 9205 5877 50  0000 C CNN
+F 2 "" H 9200 6050 50  0000 C CNN
+F 3 "" H 9200 6050 50  0000 C CNN
+	1    9200 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:GND #PWR036
+U 1 1 5D127D38
+P 9400 6050
+F 0 "#PWR036" H 9400 5800 50  0001 C CNN
+F 1 "GND" H 9405 5877 50  0000 C CNN
+F 2 "" H 9400 6050 50  0000 C CNN
+F 3 "" H 9400 6050 50  0000 C CNN
+	1    9400 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 5950 9400 6050
+Wire Wire Line
+	9150 5900 9200 5900
+Wire Wire Line
+	9200 5900 9200 6050
+Wire Wire Line
+	7900 5950 7900 6050
+Wire Wire Line
+	5550 6250 5550 6350
+Wire Wire Line
+	5550 6650 5550 6950
+$Comp
+L bornhack_scale_it-rescue:+3.3V #PWR016
+U 1 1 5D166611
+P 8250 3800
+F 0 "#PWR016" H 8250 3650 50  0001 C CNN
+F 1 "+3.3V" H 8265 3973 50  0000 C CNN
+F 2 "" H 8250 3800 50  0000 C CNN
+F 3 "" H 8250 3800 50  0000 C CNN
+	1    8250 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:GND #PWR023
+U 1 1 5D166617
+P 8250 4450
+F 0 "#PWR023" H 8250 4200 50  0001 C CNN
+F 1 "GND" H 8255 4277 50  0000 C CNN
+F 2 "" H 8250 4450 50  0000 C CNN
+F 3 "" H 8250 4450 50  0000 C CNN
+	1    8250 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 4450 8250 4300
+$Comp
+L device:C C3
+U 1 1 5D166623
+P 8250 4150
+F 0 "C3" H 8365 4196 50  0000 L CNN
+F 1 "100nF" H 8365 4105 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 8288 4000 50  0001 C CNN
+F 3 "~" H 8250 4150 50  0001 C CNN
+	1    8250 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 3800 8250 4000
+$Comp
+L bornhack_scale_it-rescue:R R12
+U 1 1 5D183D53
+P 5050 6750
+F 0 "R12" H 5120 6796 50  0000 L CNN
+F 1 "220" H 5120 6705 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 4980 6750 50  0001 C CNN
+F 3 "" H 5050 6750 50  0001 C CNN
+	1    5050 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 6900 5050 6950
+Wire Wire Line
+	9400 5600 9600 5600
+Connection ~ 9400 5600
+Text GLabel 2550 3700 0    50   Input ~ 0
+SD_MOSI
+Text GLabel 2550 3800 0    50   Input ~ 0
+SD_MISO
+Text GLabel 3900 4450 3    50   Input ~ 0
+SD_CLK
+$Comp
+L bornhack_scale_it-rescue:+3.3V #PWR014
+U 1 1 5D199F88
+P 8850 3400
+F 0 "#PWR014" H 8850 3250 50  0001 C CNN
+F 1 "+3.3V" H 8865 3573 50  0000 C CNN
+F 2 "" H 8850 3400 50  0000 C CNN
+F 3 "" H 8850 3400 50  0000 C CNN
+	1    8850 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:R R6
+U 1 1 5D19AAB6
+P 8850 3650
+F 0 "R6" H 8920 3696 50  0000 L CNN
+F 1 "100k" H 8920 3605 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 8780 3650 50  0001 C CNN
+F 3 "" H 8850 3650 50  0001 C CNN
+	1    8850 3650
+	1    0    0    -1  
+$EndComp
+Text GLabel 8700 3950 0    50   Input ~ 0
+SD_CS
+Wire Wire Line
+	8850 3400 8850 3500
+Wire Wire Line
+	9150 3950 8850 3950
+Wire Wire Line
+	8850 3800 8850 3950
+Connection ~ 8850 3950
+Wire Wire Line
+	8850 3950 8700 3950
+Text GLabel 4000 4450 3    50   Input ~ 0
+SD_CS
+Text GLabel 3400 1950 1    50   Input ~ 0
+IR_RX
+Text GLabel 3500 1950 1    50   Input ~ 0
+IR_TX
+$Comp
+L bornhack_scale_it-rescue:+3.3V #PWR027
+U 1 1 5D1BEB88
+P 1400 4750
+F 0 "#PWR027" H 1400 4600 50  0001 C CNN
+F 1 "+3.3V" H 1415 4923 50  0000 C CNN
+F 2 "" H 1400 4750 50  0000 C CNN
+F 3 "" H 1400 4750 50  0000 C CNN
+	1    1400 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:GND #PWR031
+U 1 1 5D1BEB92
+P 1400 5400
+F 0 "#PWR031" H 1400 5150 50  0001 C CNN
+F 1 "GND" H 1405 5227 50  0000 C CNN
+F 2 "" H 1400 5400 50  0000 C CNN
+F 3 "" H 1400 5400 50  0000 C CNN
+	1    1400 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 5400 1400 5250
+$Comp
+L device:C C5
+U 1 1 5D1BEB9D
+P 1400 5100
+F 0 "C5" H 1515 5146 50  0000 L CNN
+F 1 "100nF" H 1515 5055 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 1438 4950 50  0001 C CNN
+F 3 "~" H 1400 5100 50  0001 C CNN
+	1    1400 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 4750 1400 4950
+$Comp
+L Switch_Extra:5-Way_Switch SW1
+U 1 1 5D1DEBEB
+P 3450 5850
+F 0 "SW1" H 3533 6375 50  0000 C CNN
+F 1 "5-Way_Switch" H 3533 6284 50  0000 C CNN
+F 2 "Button_Switch_SMD_Extra:SF303GJ26" H 3850 5650 50  0001 C CNN
+F 3 "" H 3850 5650 50  0001 C CNN
+	1    3450 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:GND #PWR037
+U 1 1 5D1F6188
+P 3950 6150
+F 0 "#PWR037" H 3950 5900 50  0001 C CNN
+F 1 "GND" H 3955 5977 50  0000 C CNN
+F 2 "" H 3950 6150 50  0000 C CNN
+F 3 "" H 3950 6150 50  0000 C CNN
+	1    3950 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 6050 3950 6050
+Wire Wire Line
+	3950 6050 3950 6150
+Text GLabel 3850 5550 2    60   Input ~ 0
+BUTTON_UP
+Text GLabel 3850 5650 2    60   Input ~ 0
+BUTTON_DOWN
+Text GLabel 3850 5750 2    60   Input ~ 0
+BUTTON_LEFT
+Text GLabel 3850 5850 2    60   Input ~ 0
+BUTTON_RIGHT
+Text GLabel 3850 5950 2    60   Input ~ 0
+BUTTON_CENTER
+$Comp
+L bornhack_scale_it-rescue:GND #PWR044
+U 1 1 5D0AEB2D
+P 1750 7400
+F 0 "#PWR044" H 1750 7150 50  0001 C CNN
+F 1 "GND" H 1755 7227 50  0000 C CNN
+F 2 "" H 1750 7400 50  0000 C CNN
+F 3 "" H 1750 7400 50  0000 C CNN
+	1    1750 7400
+	1    0    0    -1  
+$EndComp
+Text GLabel 1750 6700 1    60   Input ~ 0
+SW_UP
+Text GLabel 2200 6700 1    60   Input ~ 0
+SW_MID
+$Comp
+L bornhack_scale_it-rescue:GND #PWR045
+U 1 1 5D0AEB39
+P 2200 7400
+F 0 "#PWR045" H 2200 7150 50  0001 C CNN
+F 1 "GND" H 2205 7227 50  0000 C CNN
+F 2 "" H 2200 7400 50  0000 C CNN
+F 3 "" H 2200 7400 50  0000 C CNN
+	1    2200 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW4
+U 1 1 5D0AEB43
+P 1750 7050
+F 0 "SW4" V 1796 6962 50  0000 R CNN
+F 1 "SW_SPST" V 1705 6962 50  0000 R CNN
+F 2 "Buttons_Switches_SMD:Panasonic_EVQPUL_EVQPUC" H 1750 7050 50  0001 C CNN
+F 3 "~" H 1750 7050 50  0001 C CNN
+	1    1750 7050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW5
+U 1 1 5D0AEB4D
+P 2200 7050
+F 0 "SW5" V 2246 6962 50  0000 R CNN
+F 1 "SW_SPST" V 2155 6962 50  0000 R CNN
+F 2 "Buttons_Switches_SMD:Panasonic_EVQPUL_EVQPUC" H 2200 7050 50  0001 C CNN
+F 3 "~" H 2200 7050 50  0001 C CNN
+	1    2200 7050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1750 6700 1750 6850
+Wire Wire Line
+	2200 6700 2200 6850
+Wire Wire Line
+	2200 7250 2200 7400
+Wire Wire Line
+	1750 7250 1750 7400
+Text GLabel 2700 6700 1    60   Input ~ 0
+SW_DOWN
+$Comp
+L bornhack_scale_it-rescue:GND #PWR046
+U 1 1 5D0B79E8
+P 2700 7400
+F 0 "#PWR046" H 2700 7150 50  0001 C CNN
+F 1 "GND" H 2705 7227 50  0000 C CNN
+F 2 "" H 2700 7400 50  0000 C CNN
+F 3 "" H 2700 7400 50  0000 C CNN
+	1    2700 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW6
+U 1 1 5D0B79F2
+P 2700 7050
+F 0 "SW6" V 2746 6962 50  0000 R CNN
+F 1 "SW_SPST" V 2655 6962 50  0000 R CNN
+F 2 "Buttons_Switches_SMD:Panasonic_EVQPUL_EVQPUC" H 2700 7050 50  0001 C CNN
+F 3 "~" H 2700 7050 50  0001 C CNN
+	1    2700 7050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2700 6700 2700 6850
+Wire Wire Line
+	2700 7250 2700 7400
+Text GLabel 4100 1950 1    50   Input ~ 0
+BUTTON_UP
+Text GLabel 4000 1950 1    50   Input ~ 0
+BUTTON_DOWN
+Text GLabel 3900 2050 1    50   Input ~ 0
+BUTTON_LEFT
+Text GLabel 3800 2050 1    50   Input ~ 0
+BUTTON_RIGHT
+Text GLabel 3600 4450 3    50   Input ~ 0
+BUTTON_CENTER
+Text GLabel 4950 3100 2    60   Input ~ 0
+SW_UP
+Text GLabel 4950 3200 2    60   Input ~ 0
+SW_MID
+Text GLabel 4950 3300 2    60   Input ~ 0
+SW_DOWN
+Text GLabel 6050 1400 0    60   Input ~ 0
+PD7
+Text GLabel 7150 1400 2    60   Input ~ 0
+PD6
+$Comp
+L bornhack_scale_it-rescue:+3.3V #PWR040
+U 1 1 5D0D6B86
+P 3350 6550
+F 0 "#PWR040" H 3350 6400 50  0001 C CNN
+F 1 "+3.3V" H 3365 6723 50  0000 C CNN
+F 2 "" H 3350 6550 50  0000 C CNN
+F 3 "" H 3350 6550 50  0000 C CNN
+	1    3350 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 6550 3350 6650
+Wire Wire Line
+	3350 6650 3450 6650
+Wire Wire Line
+	3750 6650 3850 6650
+Wire Wire Line
+	4150 6650 4250 6650
+$Comp
+L device:LED D1
+U 1 1 5D0D6B94
+P 3600 6650
+F 0 "D1" H 3593 6395 50  0000 C CNN
+F 1 "LED" H 3593 6486 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 3600 6650 50  0001 C CNN
+F 3 "~" H 3600 6650 50  0001 C CNN
+	1    3600 6650
+	-1   0    0    1   
+$EndComp
+$Comp
+L bornhack_scale_it-rescue:R R11
+U 1 1 5D0D6B9E
+P 4000 6650
+F 0 "R11" V 3793 6650 50  0000 C CNN
+F 1 "1k" V 3884 6650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3930 6650 50  0001 C CNN
+F 3 "" H 4000 6650 50  0001 C CNN
+	1    4000 6650
+	0    1    1    0   
+$EndComp
+Text GLabel 4250 6650 2    50   Input ~ 0
+LED_A
+$Comp
+L Connector:Micro_SD_Card_Det J4
+U 1 1 5D0C3089
+P 10050 4250
+F 0 "J4" H 10000 5067 50  0000 C CNN
+F 1 "Micro_SD_Card_Det" H 10000 4976 50  0000 C CNN
+F 2 "Connectors:MEM2061" H 12100 4950 50  0001 C CNN
+F 3 "https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&item_id=195&is_series=1" H 10050 4350 50  0001 C CNN
+	1    10050 4250
+	1    0    0    -1  
+$EndComp
+Text GLabel 9150 4650 0    60   Input ~ 0
+SD_CD
+Text GLabel 9150 4750 0    60   Input ~ 0
+SD_CD
+$Comp
+L Powersources:Battery_Cell BT1
+U 1 1 5D0EB900
+P 800 3500
+F 0 "BT1" H 918 3596 50  0000 L CNN
+F 1 "Battery_Cell" H 918 3505 50  0000 L CNN
+F 2 "Power:Single_AA_Holder_Sidemount" V 800 3560 50  0001 C CNN
+F 3 "" V 800 3560 50  0001 C CNN
+	1    800  3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Powersources:Battery_Cell BT2
+U 1 1 5D0EC8A2
+P 800 3900
+F 0 "BT2" H 918 3996 50  0000 L CNN
+F 1 "Battery_Cell" H 918 3905 50  0000 L CNN
+F 2 "Power:Single_AA_Holder_Sidemount" V 800 3960 50  0001 C CNN
+F 3 "" V 800 3960 50  0001 C CNN
+	1    800  3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J7
+U 1 1 5D2487AE
+P 7350 2700
+F 0 "J7" H 7120 2689 50  0000 R CNN
+F 1 "USB_B_Micro" H 7120 2598 50  0000 R CNN
+F 2 "Connectors:USB_Micro-B_10103594-0001LF" H 7500 2650 50  0001 C CNN
+F 3 "~" H 7500 2650 50  0001 C CNN
+	1    7350 2700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2800 5850 2800
+Wire Wire Line
+	6150 2800 6200 2800
+Wire Wire Line
+	6150 2700 7050 2700
+Wire Wire Line
+	6800 2500 7050 2500
+Wire Wire Line
+	6200 2200 6200 2800
+Connection ~ 6200 2800
+Wire Wire Line
+	6200 2800 7050 2800
+Wire Wire Line
+	6850 2900 7050 2900
+Wire Wire Line
+	7450 3100 7450 3200
+Wire Wire Line
+	6850 3200 7350 3200
+Wire Wire Line
+	7350 3100 7350 3200
+Connection ~ 7350 3200
+Wire Wire Line
+	7350 3200 7450 3200
+$EndSCHEMATC

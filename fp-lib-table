@@ -1,0 +1,13 @@
+(fp_lib_table
+  (lib (name badgelife_sao_v169bis)(type KiCad)(uri /Users/tf/Documents/Libraries/Badgelife_SAO_v169bis_20190321-0053/badgelife_sao_v169bis.pretty)(options "")(descr ""))
+  (lib (name Connectors)(type KiCad)(uri /Users/tf/Documents/Libraries/KiCad_flummer.net/Connectors.pretty)(options "")(descr ""))
+  (lib (name Button_Switch_SMD_Extra)(type KiCad)(uri "/Users/tf/Documents/Misc Projects/arturo182/kicad-modules/Button_Switch_SMD_Extra.pretty")(options "")(descr ""))
+  (lib (name Buzzer_Beeper_Extra)(type KiCad)(uri "/Users/tf/Documents/Misc Projects/arturo182/kicad-modules/Buzzer_Beeper_Extra.pretty")(options "")(descr ""))
+  (lib (name Connector_Amphenol)(type KiCad)(uri "/Users/tf/Documents/Misc Projects/arturo182/kicad-modules/Connector_Amphenol.pretty")(options "")(descr ""))
+  (lib (name Connector_PinHeader_2.54mm_Extra)(type KiCad)(uri "/Users/tf/Documents/Misc Projects/arturo182/kicad-modules/Connector_PinHeader_2.54mm_Extra.pretty")(options "")(descr ""))
+  (lib (name Connector_TE-Connectivity_Extra)(type KiCad)(uri "/Users/tf/Documents/Misc Projects/arturo182/kicad-modules/Connector_TE-Connectivity_Extra.pretty")(options "")(descr ""))
+  (lib (name Connector_USB_Extra)(type KiCad)(uri "/Users/tf/Documents/Misc Projects/arturo182/kicad-modules/Connector_USB_Extra.pretty")(options "")(descr ""))
+  (lib (name Package_DFN_QFN_Extra)(type KiCad)(uri "/Users/tf/Documents/Misc Projects/arturo182/kicad-modules/Package_DFN_QFN_Extra.pretty")(options "")(descr ""))
+  (lib (name Symbols_Extra)(type KiCad)(uri "/Users/tf/Documents/Misc Projects/arturo182/kicad-modules/Symbols_Extra.pretty")(options "")(descr ""))
+  (lib (name Opto)(type KiCad)(uri /Users/tf/Documents/Libraries/KiCad_flummer.net/Opto.pretty)(options "")(descr ""))
+)
