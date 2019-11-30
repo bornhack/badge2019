@@ -28,6 +28,7 @@
 #include "power.h"
 #include "font.h"
 #include "display.h"
+#include "sdcard.h"
 #include "menu.h"
 
 #ifdef NDEBUG
@@ -51,6 +52,23 @@ static const struct button_config anypressed[BTN_MAX] = {
 
 extern const struct dp_cimage logo;
 
+static FRESULT show_logo(void)
+{
+	FATFS fs;
+	FRESULT res;
+
+	sd_init();
+
+	res = f_mount(&fs, "", 1);
+	if (res != FR_OK)
+		goto err;
+
+	res = dp_showbmp_at("LOGO.BMP", 0, 0);
+err:
+	sd_uninit();
+	return res;
+}
+
 static void
 idle(void)
 {
@@ -58,7 +76,8 @@ idle(void)
 	unsigned int count = 0;
 
 	dp_fill(0, 0, 240, 240, 0x000);
-	dp_cimage(0, 10, &logo);
+	if (show_logo() != FR_OK)
+		dp_cimage(0, 10, &logo);
 	buttons_config(anypressed);
 
 	ticker_start(&tick1s, 1000, 2);
