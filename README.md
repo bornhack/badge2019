@@ -96,9 +96,9 @@ This should produce a file called `code.bin` in the `out` directory.
 ### 4. Update your badge
 
 1. Connect a USB cable to the board and your computer.
-2. Press the **BOOT** button on the badge.
+2. Press the **BOOT** button on the badge (the red LED lights up).
 3. Copy `out/code.bin` to the `GECKOBOOT` USB stick that appeared on your computer.
-4. Eject (or unmount) the USB stick, and watch your code run.
+4. Eject (or unmount) the USB stick (the blue LED lights up), the badge reboots and you can watch your code run.
 
 Alternatively if you have [dfu-utils][] installed step 3 and 4 can be replaced by typing
 `make dfu` in the source repository.
