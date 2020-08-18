@@ -27,6 +27,6 @@ struct font {
 	uint8_t data[];
 };
 
-const struct font font;
+extern const struct font font;
 
 #endif
